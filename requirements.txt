@@ -1,0 +1,8 @@
+git+https://github.com/openai/whisper.git
+ipywebrtc
+openai
+streamlit
+plotly
+wordcloud
+streamlit-audiorecorder
+st-audiorecorder
