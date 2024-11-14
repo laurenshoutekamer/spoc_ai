@@ -6,3 +6,4 @@ plotly
 wordcloud
 streamlit-audiorecorder
 st-audiorecorder
+FFmpeg

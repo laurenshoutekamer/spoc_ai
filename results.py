@@ -22,7 +22,7 @@ def main():
     st.session_state["transcript"] = transcript
 
     # Analyze sentiment using OpenAI API
-    api_key = "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"
+    api_key = #insertyourapikeyhere
     (
         positive_dict,
         negative_dict,

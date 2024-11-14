@@ -3,7 +3,7 @@ import streamlit as st
 
 def main():
     st.title("Select Feedback Categories")
-    st.write("Type the feedback categories you care about and add them to the list.")
+    st.write("Select 3 feedback categories you care about and add them to the list.")
 
     # Input for adding a custom category
     new_category = st.text_input("Enter a category", "")

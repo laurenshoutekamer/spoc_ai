@@ -13,7 +13,7 @@ def analyze_sentiment(transcript, api_key, categories):
     prompt = f"""
     You are an assistant that analyzes customer feedback transcripts. The feedback is about the following categories: {categories_str}.
 
-    For each feedback category, please provide the following in this specific structured format:
+    For each feedback category, please provide the following in this specific structured format, make sure every category is named exactly as in the prompt:
 
     - sentiment_score_<category_name> = <number between 0 and 1>
     - positive_feedback_<category_name> = ["positive aspect 1", "positive aspect 2", ...]
@@ -32,7 +32,7 @@ def analyze_sentiment(transcript, api_key, categories):
 
     # Make the API call
     completion = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model="gpt-4o",
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": prompt},
